@@ -46,17 +46,17 @@ The static void Galaxy is available through its alias of string[]{"CLI2", "Galax
         {
             static void Main(string[] args)
             {
-                Console.WriteLine("This is a quick demo for using the CLIAttribute.\r\nYou might want to simply     pass the string[] args to the HandleArgs function.\r\n");
+                Console.WriteLine("This is a quick demo for using the CLIAttribute.\r\nYou might want to simply pass the string[] args to the HandleArgs function.\r\n");
     
                 /// Will print: 'Hello World: This is pretty handy'
-                LazyCLI.CLI..HandleArgs(new string[] { "CLI", "Hello", "World", "This is pretty handy" });
+                LazyCLI.CLI.HandleArgs(new string[] { "CLI", "Hello", "World", "This is pretty handy" });
                 Console.ReadKey();
     
                 /// Will print:
                 ///   Andromeda
                 ///   Andromeda
                 ///   Andromeda
-                LazyCLI.CLI..HandleArgs(new string[] { "CLI2", "Galaxy", "Anromeda", "3" });
+                LazyCLI.CLI.HandleArgs(new string[] { "CLI2", "Galaxy", "Anromeda", "3" });
                 Console.ReadKey();
             }
         }
@@ -65,7 +65,7 @@ The static void Galaxy is available through its alias of string[]{"CLI2", "Galax
 Sample printout
 
     This is a quick demo for using the CLIAttribute.
-    You might want to simply     pass the string[] args to the HandleArgs function.
+    You might want to simply pass the string[] args to the HandleArgs function.
     
     Hello World: This is pretty handy
     Anromeda
