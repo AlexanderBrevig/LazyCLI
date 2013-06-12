@@ -33,7 +33,7 @@ namespace LazyCLI
                             if (alias != null &&
                                 alias.Equals(arguments[argsIndex++]))
                             {
-                                while (argsIndex <= arguments.Count &&
+                                while (argsIndex < arguments.Count &&
                                     !arguments[argsIndex].Contains("-"))
                                 {
                                     newArgs.Add(arguments[argsIndex]);

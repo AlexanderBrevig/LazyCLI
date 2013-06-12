@@ -37,6 +37,11 @@ namespace LazyCLISample
             LazyCLI.CLI.HandleArgs(new string[] { "-dev", "-user", "username", "-hello", "compound" });
             Console.WriteLine(data.DevMode + " " + data.Name);
             Console.ReadKey();
+
+            data = new Data();
+            LazyCLI.CLI.HandleArgs(new string[] { "-dev" });
+            Console.WriteLine(data.DevMode + " " + data.Name);
+            Console.ReadKey();
         }
 
         [LazyCLI("-dev")]
